@@ -1,0 +1,19 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+
+.page {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.title-h2 {
+  font-size: 32px;
+  color: $color-black;
+  margin-bottom: 0;
+
+  &--mb {
+    margin-bottom: 15px;
+  }
+}

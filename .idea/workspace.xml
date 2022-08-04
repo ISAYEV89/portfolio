@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +27,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/assets/image/icon" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\icon" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,6 +58,8 @@
       <updated>1659208009023</updated>
       <workItem from="1659208010235" duration="619000" />
       <workItem from="1659380370593" duration="436000" />
+      <workItem from="1659467292662" duration="629000" />
+      <workItem from="1659573502150" duration="3960000" />
     </task>
     <servers />
   </component>
@@ -58,7 +71,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

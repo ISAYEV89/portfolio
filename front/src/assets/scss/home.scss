@@ -1,0 +1,43 @@
+.home {
+  z-index: 1;
+  background: url('/assets/image/icon/bg1.jpg') no-repeat scroll center center;
+  background-size: cover;
+  //height: 500px;
+
+
+  &__img {
+
+
+    & img {
+      transform: rotateY(180deg);
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+    }
+
+  }
+
+
+  &__info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+
+
+    & h3 {
+      font-size: 40px;
+    }
+
+    & h1 {
+      font-size: 70px;
+    }
+
+    & h5 {
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+}

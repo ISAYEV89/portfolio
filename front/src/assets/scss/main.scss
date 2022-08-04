@@ -1,8 +1,10 @@
-@import "variable.scss";
 @import 'bootstrap.scss';
+@import "variable.scss";
+@import "common.scss";
 //@import 'bootstrap.clear.scss';
 @import 'header.scss';
-@import "common.scss";
+@import "home";
+@import "skill";
 
 
 
