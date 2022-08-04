@@ -1,11 +1,20 @@
 body {
   font-family: "Rubik", sans-serif;
+  color: $color-black;
 }
 
 
 .page {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.page-wrap {
+
+  & > .page:nth-child(even) {
+    background-color: #F9F9FF;
+  }
+
 }
 
 .title-h2 {
@@ -16,4 +25,9 @@ body {
   &--mb {
     margin-bottom: 15px;
   }
+}
+
+
+.main-title {
+  margin-bottom: 75px;
 }

@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/front/src/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/skill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/skill.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +59,7 @@
       <workItem from="1659208010235" duration="619000" />
       <workItem from="1659380370593" duration="436000" />
       <workItem from="1659467292662" duration="629000" />
-      <workItem from="1659573502150" duration="3960000" />
+      <workItem from="1659573502150" duration="8023000" />
     </task>
     <servers />
   </component>

@@ -4,12 +4,63 @@
 
 .skill-block {
 
-  box-shadow: 0 8px 30px 0 rgba(153, 153, 153,  10%);
+  box-shadow: 0 8px 30px 0 rgba(153, 153, 153, 10%);
   padding: 50px 35px;
 
   & h3 {
-    color: #222;
     font-size: 21px;
     text-transform: uppercase;
+    color: $color-black;
+    font-weight: bold;
   }
+
+  &__item {
+    margin-bottom: 16px;
+
+    & h4 {
+      font-size: 14px;
+      margin-right: 4px;
+      text-align: right;
+      font-weight: normal;
+      color: #777;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+    }
+  }
+
+  &__count {
+    padding-left: 4px;
+  }
+
+
+  &__progress {
+    height: 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #eee;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 0 20px 0 rgba(132, 144, 255,  20%);
+    //box-shadow: 0 0 20px 0 rgba(72,73,81,  20%);
+    //#b8bacf
+
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+
+    & .progress-bar {
+      width: 0;
+      transition: width .6s ease;
+      height: 10px ;
+      border-radius: 5px;
+      vertical-align: middle;
+      align-self: center;
+      background-image: -webkit-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+
+    }
+  }
+
 }
