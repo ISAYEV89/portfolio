@@ -1,0 +1,52 @@
+.blog {
+
+
+  &__item {
+
+  }
+
+  &__img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: relative;
+
+    &:before {
+      content: "";
+      background: #203656;
+      display: block;
+      height: 100%;
+      left: 0;
+      opacity: .6;
+      top: 0;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+    }
+
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  &__content {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    bottom: 0;
+    padding: 10px 10px 20px 10px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    max-height: 80px;
+   /* display: flex;
+    align-items: flex-end;*/
+  }
+}
