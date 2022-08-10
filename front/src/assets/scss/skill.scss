@@ -53,14 +53,19 @@
 
     & .progress-bar {
       width: 0;
-      transition: width .6s ease;
       height: 10px ;
       border-radius: 5px;
       vertical-align: middle;
       align-self: center;
       background-image: -webkit-linear-gradient(0deg,#8490ff 0%,#62bdfc 100%);
+      transition: all 2s ease-out ;
+
 
     }
   }
 
+}
+
+.hidden {
+  width: 0 !important;
 }

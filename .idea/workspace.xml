@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/skill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/skill.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +27,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/assets/image/icon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/assets/scss" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\scss" />
       <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\icon" />
     </key>
   </component>
@@ -59,6 +62,8 @@
       <workItem from="1659467292662" duration="629000" />
       <workItem from="1659573502150" duration="8621000" />
       <workItem from="1659718836646" duration="9836000" />
+      <workItem from="1659821014919" duration="748000" />
+      <workItem from="1660137130554" duration="7304000" />
     </task>
     <servers />
   </component>
