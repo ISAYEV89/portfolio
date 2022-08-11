@@ -1,6 +1,3 @@
-import $ from 'jquery'
-
-
 
 
 $(document).ready(function () {
@@ -123,14 +120,14 @@ $(document).ready(function () {
     new Animation('.animation-bar', 'progress-bar');
 
     //
-   /* var scrollOffset = $(document).scrollTop();
-    var con = $('.skill').offset().top;
-    var containerOffset = con - window.innerHeight;
+    /* var scrollOffset = $(document).scrollTop();
+     var con = $('.skill').offset().top;
+     var containerOffset = con - window.innerHeight;
 
 
-    if (scrollOffset > containerOffset) {
-        $('.progress-bar').removeClass('hidden');
-    }*/
+     if (scrollOffset > containerOffset) {
+         $('.progress-bar').removeClass('hidden');
+     }*/
 
 
 });

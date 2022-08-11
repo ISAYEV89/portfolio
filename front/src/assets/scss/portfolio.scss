@@ -1,33 +1,74 @@
-.tabs {
+.grid {
+  max-width: 1200px;
+  margin: 40px auto;
   padding: 0;
-  list-style: none;
-  text-align: center;
-  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
-
-.tabs li {
-  background: none;
-  color: #222;
-  display: inline-block;
-  padding: 10px 15px;
+.grid > li {
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 30px 15px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.filters {
+  margin-top: 40px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid li img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.filters button {
+  padding: 10px 25px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 10px;
+  transition: 150ms;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  position: relative;
+  outline: none;
   cursor: pointer;
+  //background: transparent;
+  color: #121212;
+}
+.filters button.is-checked {
+  background-color: #121212;
+  color: #ffffff;
+}
+.element-item > div {
+  padding: 20px 15px;
+  background-color: #121212;
+  color: #dddddd;
+}
+.element-item p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
 }
 
-ul.tabs li.current {
-  //background: #ededed;
-  //color: #222;
-  color: #8490ff;
+@media (max-width: 767px) {
+  .filters button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .grid > li {
+    width: calc(100% - 30px);
+  }
+  .element-item p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
-.tab-content {
-  display: none;
-  //background: #ededed;
-  padding: 15px;
-}
 
-.tab-content.current {
-  display: inherit;
-}
+
 
 .portfolio {
 
