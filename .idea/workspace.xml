@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/book.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +71,7 @@
       <workItem from="1660137130554" duration="8037000" />
       <workItem from="1660164721756" duration="1291000" />
       <workItem from="1660218038923" duration="13405000" />
+      <workItem from="1660248942483" duration="233000" />
     </task>
     <servers />
   </component>
