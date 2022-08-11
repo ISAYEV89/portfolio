@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/image/book/Kompüter_texnikası_və_proqramlaşdırma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/image/book/Komputer_texnikasi_ve_proqramlaidirma.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/image/book/Kompüter_və_İnformasiya-kommunikasiya_Texnologiyaları.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/image/book/Komputer_ve_İnformasiya-kommunikasiya_Texnologiyalari.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/image/book/Scratch_2.0_Proqramlaşdırma_Dili_1-ci_Hissə.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/image/book/Scratch_2.0_Proqramlashdirma_Dili_1-ci_Hisse.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/portfolio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
     </list>
@@ -79,7 +74,7 @@
       <workItem from="1659821014919" duration="748000" />
       <workItem from="1660137130554" duration="8037000" />
       <workItem from="1660164721756" duration="1291000" />
-      <workItem from="1660218038923" duration="6849000" />
+      <workItem from="1660218038923" duration="13405000" />
     </task>
     <servers />
   </component>

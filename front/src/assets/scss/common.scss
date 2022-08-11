@@ -1,5 +1,5 @@
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto";
   color: $color-black;
 }
 
@@ -36,4 +36,9 @@ body {
   font-size: 18px;
   text-align: center;
   color: #222;
+}
+
+.main-bg {
+  //background-color: #F3F2EF;
+  background-color: #F6F6F6;
 }

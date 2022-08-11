@@ -11,7 +11,9 @@ const PATHS = {
 };
 
 // url list
-let htmlUrl = 'index';
+// let htmlUrl = 'index';
+let htmlUrl = 'book';
+// let htmlUrl = 'book-inner';
 
 
 
@@ -28,7 +30,7 @@ module.exports = {
     output: {
         filename: `${PATHS.assets}js/[name].js`,
         path: PATHS.dist,
-        publicPath: './'
+        publicPath: '/'
     },
     module: {
         rules: [
