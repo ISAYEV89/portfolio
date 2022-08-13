@@ -2,8 +2,8 @@
 
 
 
-/*$host = 'localhost';
-$dbname = 'giveaway';
+$host = 'localhost';
+$dbname = 'portfolio';
 $user = 'root';
 $pass = '';
 
@@ -14,7 +14,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-*/
+
 
 
 ?>

@@ -12,8 +12,8 @@ const PATHS = {
 
 // url list
 // let htmlUrl = 'index';
-let htmlUrl = 'book';
-// let htmlUrl = 'book-inner';
+// let htmlUrl = 'book';
+let htmlUrl = 'book-inner';
 
 
 

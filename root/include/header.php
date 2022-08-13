@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ .  '/../inc/config.php';
+require_once __DIR__ .  '/../inc/ip.php';
 
 ?>
 <!doctype html>
@@ -18,3 +19,4 @@ require_once __DIR__ .  '/../inc/config.php';
 <header>
 
 </header>
+
