@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/book-inner.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/book-inner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/inc/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/inc/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/inc/ip.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/inc/ip.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,15 +46,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/assets/image/blog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\blog" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\css" />
       <recent name="C:\xampp\htdocs\portfolio\root" />
       <recent name="C:\xampp\htdocs\portfolio\front\dist\assets\js" />
       <recent name="C:\xampp\htdocs\portfolio\front\src\assets\scss" />
-      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\icon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\front\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +94,8 @@
       <workItem from="1660248942483" duration="2569000" />
       <workItem from="1660304277979" duration="3797000" />
       <workItem from="1660345667742" duration="1435000" />
-      <workItem from="1660397674380" duration="2053000" />
+      <workItem from="1660397674380" duration="4296000" />
+      <workItem from="1660480602193" duration="9852000" />
     </task>
     <servers />
   </component>
