@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/css/bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/css/bootstrap4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/assets/js/isotope-docs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/js/isotope-docs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,18 +50,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/assets/image/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\blog" />
-      <recent name="C:\xampp\htdocs\portfolio\root\assets\css" />
-      <recent name="C:\xampp\htdocs\portfolio\root" />
-      <recent name="C:\xampp\htdocs\portfolio\front\dist\assets\js" />
-      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\scss" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\portfolio\front\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\root\assets" />
+      <recent name="C:\xampp\htdocs\portfolio\root\admin\book" />
+      <recent name="C:\xampp\htdocs\portfolio\root\admin\skill" />
+      <recent name="C:\xampp\htdocs\portfolio\root\admin\css" />
+      <recent name="C:\xampp\htdocs\portfolio\root\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -94,7 +102,7 @@
       <workItem from="1660480602193" duration="9852000" />
       <workItem from="1660595218514" duration="594000" />
       <workItem from="1660607793947" duration="734000" />
-      <workItem from="1660660435035" duration="1101000" />
+      <workItem from="1660660435035" duration="8068000" />
     </task>
     <servers />
   </component>

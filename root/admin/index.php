@@ -1,3 +1,8 @@
+<?php
+include_once __DIR__ . './include/header.php';
+include_once __DIR__ .  './include/menu.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,55 +10,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-
-
     <link rel="stylesheet" href="css/bootstrap4.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-
-
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
     <title>Admin panel simple</title>
 </head>
 <body>
 
-<div class="wui-side-menu open pinned" data-wui-theme="dark">
-    <div class="wui-side-menu-header">
-        <a href="#" class="wui-side-menu-trigger"><i class="fa fa-bars"></i></a>
-        <a href="#" class="wui-side-menu-pin-trigger">
-            <i class="fa fa-thumb-tack"></i>
-        </a>
-    </div>
-    <ul class="wui-side-menu-items">
-        <li>
-            <a href="" class="wui-side-menu-item active">
-                <i class="box-ico fa fa-music fa-fw"></i>
-                <span class="box-title">Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="" class="wui-side-menu-item">
-                <i class="box-ico fa fa-list-ol fa-fw"></i>
-                <span class="box-title">Projects</span>
-            </a>
-        </li>
-        <li>
-            <a href="" class="wui-side-menu-item ">
-                <i class="box-ico fa fa-users fa-fw"></i>
-                <span class="box-title">Messages</span>
-            </a>
-        </li>
-        <li>
-            <a href="" class="wui-side-menu-item ">
-                <i class="box-ico fa fa-list-alt fa-fw"></i>
-                <span class="box-title">Skills</span>
-            </a>
-        </li>
-    </ul>
-</div>
+
+
+
+
 <div class="wui-content">
     <div class="wui-content-header">
         <a href="#" class="wui-side-menu-trigger"><i class="fa fa-bars"></i></a>

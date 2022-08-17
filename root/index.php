@@ -40,48 +40,35 @@
 
                         <div class="skill-block">
                             <h3>Web | Proqramlaşdırma</h3>
+
                             <div class="skill-block__main">
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
 
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
+                                <?php
+
+                                $skills = $db->prepare("SELECT * FROM `skill` WHERE `side` = 1 AND `s_id` = 1");
+                                $skills->execute();
+
+                                while ($skill = $skills->fetch(PDO::FETCH_ASSOC)) {
+                                    ?>
+                                        <div class="skill-block__item">
+                                        <h4><?php echo $skill['title'] ?> <span class="skill-block__count">
+                                                <?php echo $skill['percent'] ?></span>%</h4>
+
+                                        <div class="skill-block__progress">
+                                            <div class="progress-bar hidden" role="progressbar" aria-valuenow="<?php echo $skill['percent'] ?>"
+                                                 aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: <?php echo $skill['percent'] ?>%;"></div>
+                                        </div>
                                     </div>
+                                    <?php
+                                }
+                                ?>
 
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
 
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
 
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
-
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
-
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
-
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
-
-                                </div>
                             </div>
+
+
                         </div>
                     </div>
                     <div class="col-xl-6">
@@ -89,46 +76,25 @@
                         <div class="skill-block">
                             <h3>Köməkçi Vasitələr</h3>
                             <div class="skill-block__main">
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
+                                <?php
 
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
+                                $skills = $db->prepare("SELECT * FROM `skill` WHERE `side` = 2 AND `s_id` = 1");
+                                $skills->execute();
+
+                                while ($skill = $skills->fetch(PDO::FETCH_ASSOC)) {
+                                    ?>
+                                    <div class="skill-block__item">
+                                        <h4><?php echo $skill['title'] ?> </h4>
+
+                                        <div class="skill-block__progress">
+                                            <div class="progress-bar hidden" role="progressbar" aria-valuenow="<?php echo $skill['percent'] ?>"
+                                                 aria-valuemin="0"
+                                                 aria-valuemax="100" style="width: 100%;"></div>
+                                        </div>
                                     </div>
-
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
-
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
-
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
-
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
-
-                                </div>
-                                <div class="skill-block__item">
-                                    <h4>After Effects <span class="skill-block__count"> 85</span>%</h4>
-
-                                    <div class="skill-block__progress">
-                                        <div class="progress-bar hidden" role="progressbar" aria-valuenow="85"
-                                             aria-valuemin="0"
-                                             aria-valuemax="100" style="width: 85%;"></div>
-                                    </div>
-
-                                </div>
+                                    <?php
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -145,7 +111,7 @@
                 <h2 class="title-h2 title-h2--mb text-center">PORTFOLIO</h2>
 
                 <div data-js="hero-demo">
-                <div class="filters button-group js-radio-button-group device-type">
+                    <div class="filters button-group js-radio-button-group device-type">
                         <button class="button is-checked" data-filter="*">Hamısı</button>
                         <button class="button" data-filter=".cat-1">Front-End</button>
                         <button class="button" data-filter=".cat-2">Back-End</button>
