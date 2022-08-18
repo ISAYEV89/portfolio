@@ -48,7 +48,7 @@ $row->execute();
                             if($e['side'] == 1)  {
                                 echo 'Web | Proqramlaşdırma';
                             }elseif ($e['side'] == 2) {
-                                  echo 'Web | Proqramlaşdırma';
+                                  echo 'Diger';
                             }
 
                            ?>
