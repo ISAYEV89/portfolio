@@ -14,7 +14,7 @@ $row->execute();
 
     <div class="page">
         <div class="page-header">
-            <div>SKILL</div>
+            <div>Kitab</div>
             <div><a class="btn btn-add btn-success" href="<?php echo $site_url; ?>/admin/book/add.php"> <i
                             class="fa fa-plus"></i> Əlavə et </a></div>
         </div>
@@ -29,6 +29,7 @@ $row->execute();
                     <th>Kategoriya</th>
                     <th>Muellif</th>
                     <th>Yukleme</th>
+                    <th>Status</th>
                     <th>Emeliyyat</th>
 
                 </tr>
@@ -43,18 +44,13 @@ $row->execute();
                     <tr>
                         <td><?php echo $s ?></td>
                         <td><?php echo $e['title'] ?></td>
-                        <td><?php echo $e['percent'] ?></td>
-                        <td><?php
-                            if($e['side'] == 1)  {
-                                echo 'Web | Proqramlaşdırma';
-                            }elseif ($e['side'] == 2) {
-                                  echo 'Diger';
-                            }
-
-                           ?>
+                        <td><?php echo $e['page'] ?></td>
+                        <td><?php echo $e['size'] ?></td>
+                        <td><?php echo $e['category'] ?></td>
+                        <td><?php echo $e['author'] ?></td>
+                        <td><?php echo $e['download'] ?></td>
 
 
-                        </td>
 
                         <td><i class="status-icon fa fa-toggle-<?php echo ($e['s_id'] == 1) ? 'on' : 'off'; ?>"></i>
                         </td>

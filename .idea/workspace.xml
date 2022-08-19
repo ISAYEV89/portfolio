@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/book/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/admin/book/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/skill/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/skill/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +104,8 @@
       <workItem from="1660607793947" duration="734000" />
       <workItem from="1660660435035" duration="8068000" />
       <workItem from="1660743043618" duration="2185000" />
+      <workItem from="1660860458992" duration="596000" />
+      <workItem from="1660916163642" duration="7217000" />
     </task>
     <servers />
   </component>

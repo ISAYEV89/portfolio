@@ -12,9 +12,9 @@ const PATHS = {
 
 // url list
 // let htmlUrl = 'index';
-// let htmlUrl = 'book';
+let htmlUrl = 'book';
 // let htmlUrl = 'book-inner';
-let htmlUrl = 'blog';
+// let htmlUrl = 'blog';
 // let htmlUrl = 'blog-inner';
 
 
