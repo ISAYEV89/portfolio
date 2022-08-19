@@ -1,6 +1,6 @@
 <?php
-include_once __DIR__ . './include/header.php';
-include_once __DIR__ .  './include/menu.php';
+include_once __DIR__ . '/include/header.php';
+include_once __DIR__ .  '/include/menu.php';
 ?>
 
 <!doctype html>

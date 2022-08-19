@@ -3,14 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/book-inner.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/book-inner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/book/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/book/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/book/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/book/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/book/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/admin/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/.idea/frame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/10_derse_MySQL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/10_derse_MySQL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/10_derse_MySQL_i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/10_derse_MySQL_r.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/Assembler proqramlaşdırma dili.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/C Dilində Proqramlaşdırma.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/C++ Proqramlaşdırma Dili, 4-cü buraxılış.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/Javascript.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/Kompüter texnikası və proqramlaşdırma.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/image/book/Kompüter və İnformasiya-kommunikasiya Texnologiyaları.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/book-inner.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/book-inner.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +65,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets/css" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,7 +120,7 @@
       <workItem from="1660660435035" duration="8068000" />
       <workItem from="1660743043618" duration="2185000" />
       <workItem from="1660860458992" duration="596000" />
-      <workItem from="1660916163642" duration="13443000" />
+      <workItem from="1660916163642" duration="20423000" />
     </task>
     <servers />
   </component>
