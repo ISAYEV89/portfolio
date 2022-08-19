@@ -141,11 +141,18 @@ if (isset($_POST['btn_submit'])) {
 
     $title = $_POST['title'];
     $author = $_POST['author'];
-    $size = $_FILES['fileToUpload']['size'];
     $page = $_POST['page'];
-    $format = $_FILES['fileToUpload']['type'];
+
     $category = $_POST['category'];
 
+    $size = $_FILES['fileToUpload']['size'];
+    $size = $size / (1024 * 1024);
+    $size = round($size,2);
+
+    $format1 = $_FILES['fileToUpload']['type'];
+    $format2 = explode( '/', $format1 );
+    $format = $format2[1];
+    $format = strtoupper($format);
 
     $file_name = $_FILES['fileToUpload']['name'];
     $file_tmp_name = $_FILES['fileToUpload']['tmp_name'];
@@ -160,13 +167,14 @@ if (isset($_POST['btn_submit'])) {
 
 /// shekil
 
+    print_r($_FILES['imgToUpload']);
+
     $img_name = $_FILES['imgToUpload']['name'];
-    $img_tmp_name = $_FILES['fileToUpload']['img_name'];
+    $img_tmp_name = $_FILES['imgToUpload']['tmp_name'];
 
-    $target_dir = '../image/book/';
-    $target_file = $target_dir . $img_name;
+    $target_file2 = $target_dir . $img_name;
 
-    move_uploaded_file($img_tmp_name, $target_file);
+    move_uploaded_file($img_tmp_name, $target_file2);
 
 
     if (isset($_POST['s_id'])) {
@@ -180,10 +188,10 @@ if (isset($_POST['btn_submit'])) {
                                             VALUES ('$author','$size', '$title', '$page', '$format' ,'$file_name', '$img_name', '$category' ,'$s_id')");
      $sql->execute();
 
-     echo "INSERT INTO `book` (`author`, `size`, `title`, `page`, `format`, `file`, `s_id`)
-                                            VALUES ('$author','$size', '$title', '$page', '$format' ,'$file_name','$s_id')";
+     echo "INSERT INTO `book` (`author`, `size`, `title`, `page`, `format`, `file`, `image`, `category` , `s_id`)
+                                            VALUES ('$author','$size', '$title', '$page', '$format' ,'$file_name', '$img_name', '$category' ,'$s_id')";
 
-//    header("Location: $site_url/admin/book/index.php");
+    header("Location: $site_url/admin/book/index.php");
 
 
 }

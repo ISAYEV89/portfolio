@@ -2,7 +2,7 @@
 include_once __DIR__ . '/../include/header.php';
 include_once __DIR__ . '/../include/menu.php';
 
-$row = $db->prepare("SELECT * FROM `book`");
+$row = $db->prepare("SELECT * FROM `book` ORDER by `id` DESC");
 $row->execute();
 
 ?>
@@ -55,10 +55,10 @@ $row->execute();
                         <td><i class="status-icon fa fa-toggle-<?php echo ($e['s_id'] == 1) ? 'on' : 'off'; ?>"></i>
                         </td>
                         <td>
-                            <a class="edit-icon" href="<?php echo $site_url ?>/admin/skill/add.php?id=<?php echo $e['id']; ?>">
+                            <a class="edit-icon" href="<?php echo $site_url ?>/admin/book/edit.php?id=<?php echo $e['id']; ?>">
                                 <i class="fa fa-edit"></i>
                             </a>
-                            <a class="delete-icon deleteItem"  href="<?php echo $site_url ?>/admin/skill/delete.php?delete=<?php echo $e['id']; ?>">
+                            <a class="delete-icon deleteItem confirm"  href="<?php echo $site_url ?>/admin/book/delete.php?delete=<?php echo $e['id']; ?>">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
                         </td>

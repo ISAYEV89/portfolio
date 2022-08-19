@@ -107,3 +107,14 @@ $('.choose').on('change', function () {
     const fileName = $(this).val().slice(i)
     $('.label').text(fileName)
 });
+
+
+$('.confirm').click(function (e) {
+
+    let isExecuted = confirm("Silmek istediğinden eminsen?");
+
+    if(!isExecuted){
+        e.preventDefault();
+    }
+
+});
