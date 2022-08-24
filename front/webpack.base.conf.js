@@ -14,8 +14,8 @@ const PATHS = {
 // let htmlUrl = 'index';
 // let htmlUrl = 'book';
 // let htmlUrl = 'book-inner';
-let htmlUrl = 'blog';
-// let htmlUrl = 'blog-inner';
+// let htmlUrl = 'blog';
+let htmlUrl = 'blog-inner';
 
 
 

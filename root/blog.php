@@ -1,6 +1,12 @@
 <?php require_once __DIR__ . '/include/header.php'; ?>
 <?php require_once __DIR__ . '/include/home.php'; ?>
+<?php
 
+
+$blogs = $db->prepare("SELECT * FROM `blog` WHERE `s_id` = 1");
+$blogs->execute();
+
+?>
 
 <main class="">
     <div class="container page">
@@ -10,103 +16,52 @@
 
                 <div class="post">
 
-                    <div class="post__item">
-                        <div class="post__left">
-                            <a href="#" class="post__img">
-                                <img src="./assets/image/blog/blog1.jpg" alt="">
-                            </a>
-                            <a href="" class="post__cat">HTML</a>
-                        </div>
+                    <?php
+                    while ($blog = $blogs->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
 
-
-                        <div class="post__content">
-                            <div>
-                                <h3 class="post__title">How beauty marks changed how we think about death</h3>
-                                <p class="post__lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloremque nobis
-                                    non
-                                    officia? Debitis, repellendus repudiandae. Accusantium deserunt dolorum ex excepturi
-                                    fuga quidem, rem sint tempora? Ab, aliquam assumenda autem beatae blanditiis
-                                    consectetur
-                                    cupiditate debitis dolorem doloremque ducimus ea eaque est expedita facere, facilis
-                                    inventore laboriosam libero modi neque nihil non nostrum obcaecati odit officia
-                                    pariatur, porro provident quasi quia quibusdam quos repellat saepe totam veritatis
-                                    voluptas voluptates voluptatibus voluptatum. Animi delectus eveniet impedit! Aliquam
-                                    aliquid assumenda consequatur corporis delectus dolorem error excepturi explicabo,
-                                    illo,
-                                    iusto laborum molestias nostrum obcaecati praesentium quaerat tempore, voluptate.
-                                    Accusantium distinctio error eveniet itaque iusto nobis, praesentium quia rem
-                                    suscipit
-                                    vel! Consequuntur cum cumque cupiditate distinctio dolorem earum est facere fuga
-                                    hic,
-                                    illo iure magnam quae repellat, soluta, voluptatem. Blanditiis, dolor, rem.
-                                    Assumenda
-                                    cupiditate deleniti dignissimos distinctio dolore est fugit, illum molestiae natus
-                                    nesciunt provident quo reiciendis rem repudiandae tempora voluptates voluptatibus?
-                                    Non
-                                    quia, vel.
-                                </p>
+                        <div class="post__item">
+                            <div class="post__left">
+                                <a href="<?php echo $site_url . '/blog-inner.php?id=' . $blog['id']; ?>"
+                                   class="post__img">
+                                    <img src="<?php echo $site_url . '/admin/image/blog/' . $blog['img'] ?>" alt="">
+                                </a>
+                                <?php
+                                    $cat = $db -> prepare("SELECT * FROM `category` WHERE `id` = {$blog['cat_id']} AND  `s_id` = 1 LIMIT 1");
+                                    $cat->execute();
+                                    $cats = $cat->fetch(PDO::FETCH_ASSOC);
+                                ?>
+                                <a href="<?php echo $cats['id']; ?>" class="post__cat"><?php echo $cats['title'] ?></a>
                             </div>
 
-                            <div>
-                                <a href="" class="post__read-more"> ARDINI OXU </a>
-                            </div>
 
-                        </div>
-                    </div>
+                            <div class="post__content">
+                                <div>
+                                    <h3 class="post__title"><?php echo $blog['title'] ?></h3>
+                                    <p class="post__lead">
+                                        <?php
+                                        $text = strip_tags($blog['text']);
+                                        $stringCut = substr($text, 0, 200);
+                                        $endPoint = strrpos($stringCut, ' ');
+                                        $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                        $string .= '...';
+                                        echo $string;
+                                        ?>
+                                    </p>
+                                </div>
 
-                    <div class="post__item">
-                        <div class="post__left">
-                            <a href="#" class="post__img">
-                                <img src="./assets/image/blog/blog2.jpg" alt="">
-                            </a>
-                            <a href="" class="post__cat">HTML</a>
-                        </div>
+                                <div>
+                                    <a href="<?php echo $site_url . '/blog-inner.php?id=' . $blog['id']; ?>"
+                                       class="post__read-more"> ARDINI OXU </a>
+                                </div>
 
-
-                        <div class="post__content">
-                            <div>
-                                <h3 class="post__title">How beauty marks changed how we think about death</h3>
-                                <p class="post__lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda
-                                    corporis
-                                    debitis deleniti dolore
-                                </p>
-                            </div>
-
-                            <div>
-                                <a href="" class="post__read-more"> ARDINI OXU </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="post__item">
-                        <div class="post__left">
-                            <a href="#" class="post__img">
-                                <img src="./assets/image/blog/blog3.jpg" alt="">
-                            </a>
-                            <a href="" class="post__cat">HTML</a>
-                        </div>
-
-
-                        <div class="post__content">
-                            <div>
-                                <h3 class="post__title">How beauty marks changed how we think about death</h3>
-                                <p class="post__lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda
-                                    corporis
-                                    debitis deleniti dolore doloribus enim facilis numquam omnis perferendis placeat
-                                    quia,
-                                    quidem reiciendis tempore!
-                                </p>
-                            </div>
-
-                            <div>
-                                <a href="" class="post__read-more"> ARDINI OXU </a>
                             </div>
                         </div>
-                    </div>
+                        <?php
+                    }
+
+                    ?>
+
 
                     <div class="post__item">
                         <div class="post__left">
@@ -153,58 +108,6 @@
                         </div>
                     </div>
 
-                    <div class="post__item">
-                        <div class="post__left">
-                            <a href="#" class="post__img">
-                                <img src="./assets/image/blog/blog2.jpg" alt="">
-                            </a>
-                            <a href="" class="post__cat">HTML</a>
-                        </div>
-
-
-                        <div class="post__content">
-                            <div>
-                                <h3 class="post__title">How beauty marks changed how we think about death</h3>
-                                <p class="post__lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda
-                                    corporis
-                                    debitis deleniti dolore
-                                </p>
-                            </div>
-
-                            <div>
-                                <a href="" class="post__read-more"> ARDINI OXU </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="post__item">
-                        <div class="post__left">
-                            <a href="#" class="post__img">
-                                <img src="./assets/image/blog/blog3.jpg" alt="">
-                            </a>
-                            <a href="" class="post__cat">HTML</a>
-                        </div>
-
-
-                        <div class="post__content">
-                            <div>
-                                <h3 class="post__title">How beauty marks changed how we think about death</h3>
-                                <p class="post__lead">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, assumenda
-                                    corporis
-                                    debitis deleniti dolore doloribus enim facilis numquam omnis perferendis placeat
-                                    quia,
-                                    quidem reiciendis tempore!
-                                </p>
-                            </div>
-
-                            <div>
-                                <a href="" class="post__read-more"> ARDINI OXU </a>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 

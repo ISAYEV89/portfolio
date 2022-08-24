@@ -215,3 +215,33 @@
     }
   }
 }
+
+
+.blog-inner {
+
+
+  &--mb {
+    margin-bottom: 12px;
+  }
+  &__info {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    text-align: center;
+
+    & img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+    }
+  }
+}
