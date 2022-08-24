@@ -17,6 +17,12 @@ if (isset($_GET['id'])) {
 
 }
 
+$view = $baza2['view'] + 1;
+
+$view_upt = $db -> prepare("UPDATE `book`  SET view=:view WHERE id='$id_rew'");
+$view_upt -> execute(array('view' => $view));
+
+echo $view;
 ?>
 
 

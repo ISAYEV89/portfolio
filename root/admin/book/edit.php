@@ -104,7 +104,8 @@ if (isset($_GET['id'])) {
                         </label>
 
                         <div class="add-form__img-result">
-                            <img class="" id="preview" src="<?php echo $site_url . '/admin/image/book/' . $baza2['image'] ?>"
+                            <img class="" id="preview"
+                                 src="<?php echo $site_url . '/admin/image/book/' . $baza2['image'] ?>"
                                  alt="your image"/>
                         </div>
 
@@ -117,8 +118,8 @@ if (isset($_GET['id'])) {
                         <label class="form-item">
 
 
-                            <input checked
-                                   class="form-item__checkbox" <?php echo ($baza2['s_id'] == 1) ? 'checked' : ''; ?> name="s_id" type="checkbox" value="1">
+                            <input class="form-item__checkbox" <?php echo ($baza2['s_id'] == 1) ? 'checked' : ''; ?>
+                                   name="s_id" type="checkbox" value="1">
                             <span class="form-item__title"> Saytda görsənsin </span>
                         </label>
                     </div>
@@ -150,7 +151,6 @@ if (isset($_POST['btn_submit'])) {
     $author = $_POST['author'];
     $page = $_POST['page'];
     $category = $_POST['category'];
-
 
 
 //    print_r($_FILES['fileToUpload']);
@@ -198,8 +198,6 @@ if (isset($_POST['btn_submit'])) {
     }
 
 
-
-
     if (isset($_POST['s_id'])) {
         $s_id = $_POST['s_id'];
     } else {
@@ -207,17 +205,16 @@ if (isset($_POST['btn_submit'])) {
     }
 
 
-/*     $sql = $db->prepare("INSERT INTO `book` (`author`, `size`, `title`, `page`, `format`, `file`, `image`, `category` , `s_id`)
-                                             VALUES ('$author','$size', '$title', '$page', '$format' ,'$file_name', '$img_name', '$category' ,'$s_id')");
-     $sql->execute();*/
+    /*     $sql = $db->prepare("INSERT INTO `book` (`author`, `size`, `title`, `page`, `format`, `file`, `image`, `category` , `s_id`)
+                                                 VALUES ('$author','$size', '$title', '$page', '$format' ,'$file_name', '$img_name', '$category' ,'$s_id')");
+         $sql->execute();*/
 
 
     $updt = $db->prepare("UPDATE `book` SET author=:author, size=:size, title=:title, page=:page, format=:format, file=:file,image=:image, category=:category, s_id=:s_id WHERE id='$id_rew'");
     $updt->execute(array('author' => $author, 'size' => $size, 'title' => $title, 'page' => $page, 'format' => $format, 'file' => $file_name, 'image' => $img_name, 'category' => $category, 's_id' => $s_id));
 
 
-
-      header("Location: $site_url/admin/book/index.php");
+    header("Location: $site_url/admin/book/index.php");
 
 
 }

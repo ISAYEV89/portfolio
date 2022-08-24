@@ -28,31 +28,32 @@
             </a>
         </li>
 
-
-
-
-       <!-- <li>
-            <a href="<?php /*$site_url*/?>/admin/contact/index.php" class="wui-side-menu-item ">
-                <i class="box-ico fa fa-sign-out-alt"></i>
-                <span class="box-title">Elaqe mektublari</span>
+        <li>
+            <a href="<?php $site_url?>/admin/blog/index.php" class="wui-side-menu-item ">
+                <i class="box-ico fas fa-plus"></i>
+                <span class="box-title">Blog</span>
             </a>
         </li>
 
         <li>
-            <a href="<?php /*$site_url*/?>/admin/post/index.php" class="wui-side-menu-item ">
-                <i class="box-ico fas fa-plus-circle"></i>
-                <span class="box-title">Post</span>
+            <a href="<?php $site_url?>/admin/tag/index.php" class="wui-side-menu-item ">
+                <i class="box-ico fas fa-tags"></i>
+                <span class="box-title">Tag</span>
             </a>
         </li>
--->
 
-
+        <li>
+            <a href="<?php $site_url?>/admin/category/index.php" class="wui-side-menu-item ">
+                <i class="box-ico fas fa-tags"></i>
+                <span class="box-title">Kategoriya</span>
+            </a>
+        </li>
 
 
 
         <li class="mt-5">
             <a href="<?php $site_url?>/admin/logout.php" class="wui-side-menu-item ">
-                <i class="box-ico fa fa-sign-out"></i>
+                <i class="box-ico fas fa-sign-out-alt"></i>
                 <span class="box-title">Çıxış</span>
             </a>
         </li>

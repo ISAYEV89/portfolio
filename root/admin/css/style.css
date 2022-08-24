@@ -409,3 +409,153 @@ tbody > .odd {
     padding-bottom: 10px;
 }
 
+
+.blog-add {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+
+}
+
+.blog-add__wrap {
+    margin-bottom: 24px;
+}
+
+.blog-add__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.blog-add__input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 36px;
+    padding-left: 10px;
+}
+
+.blog-add__text {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+.blog-add__select {
+    width: 100%;
+    height: 36px;
+    padding-left: 10px;
+}
+
+.blog-add__textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 100px;
+    padding: 10px;
+}
+
+.btn-submit2 {
+    background-color: #000;
+    text-decoration: none;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+
+
+}
+
+.btn-submit2:hover {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.add-form__img {
+    margin-bottom: 32px;
+}
+
+.btn-submit {
+    background-color: #027d00;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 35px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    color: #fff;
+}
+
+.btn-submit i {
+    margin-right: 10px;
+}
+
+.add-form__img-result {
+    text-align: center;
+}
+
+.add-form__img-result img{
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.status-icon  {
+    font-size: 24px;
+}
+
+.status-icon.fa-toggle-on {
+    color: green;
+}
+
+.status-icon.fa-toggle-off {
+    color: grey;
+}
+
+.blog_img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+#cke_1_contents {
+    min-height: 500px;
+}
+
+
+.add-form__img-result {
+    text-align: center;
+}
+
+.add-form__img-result img{
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
