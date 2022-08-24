@@ -559,3 +559,7 @@ tbody > .odd {
     -o-object-fit: contain;
     object-fit: contain;
 }
+
+.img-blog {
+    width: 75px;
+}

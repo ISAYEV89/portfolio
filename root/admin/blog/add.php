@@ -23,7 +23,7 @@ include_once __DIR__ . '/../include/menu.php';
                 <div class="add-form__img">
                     <label for="addImageInput" class="add-form__img-input">
                         <span class="btn-submit"><i class="far fa-image"></i>Shekil sech</span>
-                        <input type='file' name="fileToUpload" hidden  id="addImageInput">
+                        <input type='file' name="fileToUpload" hidden id="addImageInput">
                     </label>
 
                     <div class="add-form__img-result">
@@ -38,7 +38,6 @@ include_once __DIR__ . '/../include/menu.php';
                 </div>
 
 
-
                 <div class="row">
                     <div class="blog-add__wrap col-xl-6">
                         <p class="blog-add__title">Taglar :</p>
@@ -50,7 +49,7 @@ include_once __DIR__ . '/../include/menu.php';
 
                             while ($tag2 = $tag->fetch(PDO::FETCH_ASSOC)) {
                                 ?>
-                                <option value="<?php echo $tag2['id'] ?>"><?php echo $tag2['name'] ?></option>
+                                <option value="<?php echo $tag2['id'] ?>"><?php echo $tag2['title'] ?></option>
                                 <?php
                             }
 
@@ -68,7 +67,7 @@ include_once __DIR__ . '/../include/menu.php';
 
                             while ($cat = $category->fetch(PDO::FETCH_ASSOC)) {
                                 ?>
-                                <option value="<?php echo $cat['id'] ?>"><?php echo $cat['name'] ?></option>
+                                <option value="<?php echo $cat['id'] ?>"><?php echo $cat['title'] ?></option>
                                 <?php
                             }
                             ?>
@@ -80,7 +79,7 @@ include_once __DIR__ . '/../include/menu.php';
 
                 <div class="blog-add__wrap">
                     <p class="blog-add__title">Metn :</p>
-                    <textarea name="text"  id="editor" cols="30" rows="10"></textarea>
+                    <textarea name="text" id="editor" cols="30" rows="10"></textarea>
                 </div>
 
 
@@ -102,7 +101,6 @@ include_once __DIR__ . '/../include/menu.php';
 
 </div>
 
-
 <?php
 
 
@@ -110,15 +108,10 @@ if (isset($_POST['btn_submit'])) {
 
 
     $title = $_POST['title'];
-    $short_text = $_POST['short_text'];
+    $cat_id = $_POST['cat_id'];
     $tag_id = $_POST['tag_id'];
-    $cat_id = $_POST['cat_id'];
-    $level_id = $_POST['level_id'];
-    $cat_id = $_POST['cat_id'];
-    $s_id = $_POST['s_id'];
-    $f_id = $_POST['f_id'];
     $text = $_POST['text'];
-
+    $s_id = $_POST['s_id'];
 
     $img_name = $_FILES['fileToUpload']['name'];
     $img_size = $_FILES['fileToUpload']['size'];
@@ -139,8 +132,8 @@ if (isset($_POST['btn_submit'])) {
     move_uploaded_file($tmp_name, $target_file);
 
 
-    $sql = $db->prepare("INSERT INTO `blog` (`title`, `short_text`, `text`, `tag_id`, `cat_id`, `level_id`, `img`, `f_id`, `view`, `s_id`)
-                                           VALUES ('$title', '$short_text', '$text', '$tag_id', '$cat_id', '$level_id','$img', '$f_id', 0, '$s_id')");
+    $sql = $db->prepare("INSERT INTO `blog` (`title`, `text`, `tag_id`, `cat_id`,  `img`,  `s_id`)
+                                           VALUES ('$title',  '$text', '$tag_id', '$cat_id','$img', '$s_id')");
     $sql->execute();
 
     header("Location: $site_url/admin/blog/index.php");
@@ -154,12 +147,12 @@ include_once __DIR__ . '/../include/footer.php';
 
 
 <script>
-    CKEDITOR.replace( 'editor', {
+    CKEDITOR.replace('editor', {
         filebrowserUploadUrl: 'ck_upload.php',
         filebrowserUploadMethod: 'form',
         language: 'az',
-        "extraPlugins" : 'imagebrowser',
+        "extraPlugins": 'imagebrowser',
         "imageBrowser_listUrl": "/admin/blog/images_list.json"
-    } );
+    });
 
 </script>

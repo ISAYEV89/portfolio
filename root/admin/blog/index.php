@@ -2,7 +2,7 @@
 include_once __DIR__ . '/../include/header.php';
 include_once __DIR__ . '/../include/menu.php';
 
-$row = $db->prepare("SELECT * FROM `book` ORDER by `id` DESC");
+$row = $db->prepare("SELECT * FROM `blog` ORDER by `id` DESC");
 $row->execute();
 
 ?>
@@ -42,18 +42,21 @@ $row->execute();
                     ?>
                     <tr>
                         <td><?php echo $s ?></td>
+                        <td>
+                            <img class="img-blog" src="<?php echo $site_url . '/admin/image/blog/' . $e['img'] ?>" alt="">
+
+                        </td>
                         <td><?php echo $e['title'] ?></td>
-                        <td><?php echo $e['page'] ?></td>
-                        <td><?php echo $e['category'] ?></td>
-                        <td><?php echo $e['author'] ?></td>
-                        <td><?php echo $e['download'] ?></td>
+                        <td><?php echo $e['cat_id'] ?></td>
+                        <td><?php echo $e['date'] ?></td>
+                        <td><?php echo $e['view'] ?></td>
                         <td><i class="status-icon fa fa-toggle-<?php echo ($e['s_id'] == 1) ? 'on' : 'off'; ?>"></i>
                         </td>
                         <td>
-                            <a class="edit-icon" href="<?php echo $site_url ?>/admin/nlog/edit.php?id=<?php echo $e['id']; ?>">
+                            <a class="edit-icon" href="<?php echo $site_url ?>/admin/blog/edit.php?id=<?php echo $e['id']; ?>">
                                 <i class="fa fa-edit"></i>
                             </a>
-                            <a class="delete-icon deleteItem confirm"  href="<?php echo $site_url ?>/admin/nlog/delete.php?delete=<?php echo $e['id']; ?>">
+                            <a class="delete-icon deleteItem confirm"  href="<?php echo $site_url ?>/admin/blog/delete.php?delete=<?php echo $e['id']; ?>">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
                         </td>
@@ -62,8 +65,6 @@ $row->execute();
                     <?php
                 }
                 ?>
-
-
 
 
 
