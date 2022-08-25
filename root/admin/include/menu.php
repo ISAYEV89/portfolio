@@ -49,6 +49,14 @@
             </a>
         </li>
 
+        <li>
+            <a href="<?php $site_url?>/admin/portfolio/index.php" class="wui-side-menu-item ">
+                <i class="box-ico fas fa-inbox"></i>
+                <span class="box-title">Portfolio</span>
+            </a>
+        </li>
+
+
 
 
         <li class="mt-5">

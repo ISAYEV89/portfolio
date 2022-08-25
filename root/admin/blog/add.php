@@ -29,7 +29,6 @@ include_once __DIR__ . '/../include/menu.php';
                     <div class="add-form__img-result">
                         <img class="d-none" id="blah" src="" alt="your image"/>
                     </div>
-
                 </div>
 
                 <div class="blog-add__wrap">

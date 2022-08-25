@@ -41,7 +41,8 @@ echo '</pre>';*/
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-
+    <link rel="stylesheet" href="<?php echo $site_url; ?>/admin/css/select2.min.css" />
+    <link rel="stylesheet" href="<?php echo $site_url; ?>/admin/css/select2-bootstrap.min.css" />
     <link rel="stylesheet" href="<?php echo $site_url ?>/admin/css/style.css">
     <title></title>
 </head>
