@@ -13,8 +13,41 @@
 </head>
 <body>
 
-<header>
+<header class="header">
+    <div class="container">
+        <section class="wrapper">
+            <a href="" class="header-logo">
+                <img src="./assets/image/icon/code.png" alt="">
+            </a>
+            <button type="button" class="opened-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+                <button type="button" class="closed-menu">
+                    <div class="closed-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
 
+                </button>
+                <ul class="menu">
+                    <li class="menu-item"><a class="active" href="">Ana Səhifə </a></li>
+                    <li class="menu-item"><a href="#">Bloq</a></li>
+                    <li class="menu-item"><a href="#">Kitablar</a></li>
+                    <li class="menu-item"><a href="#contact" class="js-anchor-link">Əlaqə</a></li>
+                </ul>
+
+
+
+            </nav>
+        </section>
+
+
+
+    </div>
 </header>
 
 
@@ -41,7 +74,6 @@
 
     </div>
 </div>
-
 
 <div class="page-wrap">
     <div class="page skill">
@@ -291,8 +323,8 @@
         </div>
     </div>
 
-    <div class="page contact">
-        <div class="container">
+    <div class="page contact" id="contact">
+        <div class="container" >
             <div class="row">
                 <div class="col-xl-12">
                     <div class="main-title">

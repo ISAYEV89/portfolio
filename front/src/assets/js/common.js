@@ -1,11 +1,7 @@
 import $ from 'jquery'
 
 
-
-
 $(document).ready(function () {
-
-
 
 
     ////group input
@@ -123,14 +119,71 @@ $(document).ready(function () {
     new Animation('.animation-bar', 'progress-bar');
 
     //
-   /* var scrollOffset = $(document).scrollTop();
-    var con = $('.skill').offset().top;
-    var containerOffset = con - window.innerHeight;
+    /* var scrollOffset = $(document).scrollTop();
+     var con = $('.skill').offset().top;
+     var containerOffset = con - window.innerHeight;
 
 
-    if (scrollOffset > containerOffset) {
-        $('.progress-bar').removeClass('hidden');
-    }*/
+     if (scrollOffset > containerOffset) {
+         $('.progress-bar').removeClass('hidden');
+     }*/
 
 
+    //// menu navbar
+
+
+    const openedMenu = document.querySelector('.opened-menu');
+    const closedMenu = document.querySelector('.closed-menu');
+    const navbarMenu = document.querySelector('.navbar');
+    const menuOverlay = document.querySelector('.overlay');
+
+
+    openedMenu.addEventListener('click', toggleMenu);
+    closedMenu.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', toggleMenu);
+
+// Toggle Menu Function
+    function toggleMenu() {
+        navbarMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+        document.body.classList.toggle('scrolling');
+    }
+
+    navbarMenu.addEventListener('click', (event) => {
+        if (event.target.hasAttribute('data-toggle') && window.innerWidth <= 992) {
+            // Prevent Default Anchor Click Behavior
+            event.preventDefault();
+            const menuItemHasChildren = event.target.parentElement;
+
+            // If menuItemHasChildren is Expanded, Collapse It
+            if (menuItemHasChildren.classList.contains('active')) {
+                collapseSubMenu();
+            } else {
+                // Collapse Existing Expanded menuItemHasChildren
+                if (navbarMenu.querySelector('.menu-item-has-children.active')) {
+                    collapseSubMenu();
+                }
+                // Expand New menuItemHasChildren
+                menuItemHasChildren.classList.add('active');
+                const subMenu = menuItemHasChildren.querySelector('.sub-menu');
+                subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
+            }
+        }
+    });
+
+
+
+
+
+    // anchor same page slowly
+
+
+    $('.js-anchor-link').click(function(e){
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if(target.length){
+            var scrollTo = target.offset().top;
+            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
+    });
 });

@@ -53,7 +53,6 @@
                                         <div class="skill-block__item">
                                         <h4><?php echo $skill['title'] ?> <span class="skill-block__count">
                                                 <?php echo $skill['percent'] ?></span>%</h4>
-
                                         <div class="skill-block__progress">
                                             <div class="progress-bar hidden" role="progressbar" aria-valuenow="<?php echo $skill['percent'] ?>"
                                                  aria-valuemin="0"

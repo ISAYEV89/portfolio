@@ -11,11 +11,11 @@ const PATHS = {
 };
 
 // url list
-// let htmlUrl = 'index';
+let htmlUrl = 'index';
 // let htmlUrl = 'book';
 // let htmlUrl = 'book-inner';
 // let htmlUrl = 'blog';
-let htmlUrl = 'blog-inner';
+// let htmlUrl = 'blog-inner';
 
 
 
@@ -32,7 +32,7 @@ module.exports = {
     output: {
         filename: `${PATHS.assets}js/[name].js`,
         path: PATHS.dist,
-        publicPath: './'
+        publicPath: '/'
     },
     module: {
         rules: [
