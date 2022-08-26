@@ -1,7 +1,6 @@
 .header {
   position: fixed;
-  //background-color: transparent;
-  background-color: white;
+  background-color: transparent;
   padding: 10px 40px;
   left: 0;
   top: 0;
@@ -11,6 +10,14 @@
   border: none;
   outline: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+
+
+}
+
+.header.active {
+  background-color: #fff !important;
+
 }
 
 
@@ -57,7 +64,7 @@ body.scrolling {
   font-size: 16px;
   font-weight: 600;
   line-height: inherit;
-  padding: 16px 0;
+  padding: 6px 0;
   border: none;
   outline: none;
   color: #121212;
@@ -251,14 +258,8 @@ body.scrolling {
     margin: 0;
   }
   .header .menu > .menu-item-has-children > a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .header .menu > .menu-item > a {

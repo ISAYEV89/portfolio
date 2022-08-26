@@ -1,33 +1,11 @@
-<?php require_once __DIR__ . './include/header.php'; ?>
-
-
-    <div class="home">
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="home__img">
-                        <img src="./assets/image/icon/avatar.png" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 home__info-wrap">
-                    <div class="home__info">
-                        <h3 class="d-none">SALAM</h3>
-                        <h1>ELÇİN İSAYEV</h1>
-                        <h2>FULL-STACK DEVELOPER</h2>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
+<?php require_once __DIR__ . '/include/header.php'; ?>
+<?php require_once __DIR__ . '/include/home.php'; ?>
 
 
     <div class="page-wrap">
-        <div class="page skill">
+
+
+        <div class=" page skill">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -36,67 +14,29 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-6">
+                    <?php
 
-                        <div class="skill-block">
-                            <h3>Web | Proqramlaşdırma</h3>
+                    $skills = $db->prepare("SELECT * FROM `skill` WHERE `s_id` = 1");
+                    $skills->execute();
 
-                            <div class="skill-block__main">
-
-                                <?php
-
-                                $skills = $db->prepare("SELECT * FROM `skill` WHERE `side` = 1 AND `s_id` = 1");
-                                $skills->execute();
-
-                                while ($skill = $skills->fetch(PDO::FETCH_ASSOC)) {
-                                    ?>
-                                        <div class="skill-block__item">
-                                        <h4><?php echo $skill['title'] ?> <span class="skill-block__count">
-                                                <?php echo $skill['percent'] ?></span>%</h4>
-                                        <div class="skill-block__progress">
-                                            <div class="progress-bar hidden" role="progressbar" aria-valuenow="<?php echo $skill['percent'] ?>"
-                                                 aria-valuemin="0"
-                                                 aria-valuemax="100" style="width: <?php echo $skill['percent'] ?>%;"></div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                ?>
-
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-
-                        <div class="skill-block">
-                            <h3>Köməkçi Vasitələr</h3>
-                            <div class="skill-block__main">
-                                <?php
-
-                                $skills = $db->prepare("SELECT * FROM `skill` WHERE `side` = 2 AND `s_id` = 1");
-                                $skills->execute();
-
-                                while ($skill = $skills->fetch(PDO::FETCH_ASSOC)) {
-                                    ?>
-                                    <div class="skill-block__item">
-                                        <h4><?php echo $skill['title'] ?> </h4>
-
-                                        <div class="skill-block__progress">
-                                            <div class="progress-bar hidden" role="progressbar" aria-valuenow="<?php echo $skill['percent'] ?>"
-                                                 aria-valuemin="0"
-                                                 aria-valuemax="100" style="width: 100%;"></div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                ?>
+                    while ($skill = $skills->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                        <div class="col-md-6">
+                            <div class="progress-container progress-primary"><span
+                                        class="progress-badge"><?php echo $skill['title'] ?></span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" data-aos="progress-full"
+                                         data-aos-offset="10" data-aos-duration="1000" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                         style="width: <?php echo $skill['percent'] . '%' ?>;"></div>
+                                    <span class="progress-value"><?php echo $skill['percent'] . '%' ?></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <?php
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -118,33 +58,27 @@
                     </div>
 
                     <ul class="grid">
-                        <li class="element-item cat-2">
-                            <a href="" class="portfolio__item">
-                                <img class="portfolio__img" src="./assets/image/portfolio/port3.webp" alt="">
-                                <div class="portfolio__content">giveaway.az</div>
-                            </a>
-                        </li>
 
-                        <li class="element-item  cat-2">
-                            <a href="" class="portfolio__item">
-                                <img class="portfolio__img" src="./assets/image/portfolio/port1.webp" alt="">
-                                <div class="portfolio__content">giveaway.az</div>
-                            </a>
-                        </li>
+                        <?php
 
-                        <li class="element-item cat-1 cat-3">
-                            <a href="" class="portfolio__item">
-                                <img class="portfolio__img" src="./assets/image/portfolio/port2.webp" alt="">
-                                <div class="portfolio__content">giveaway.az</div>
-                            </a>
-                        </li>
+                        $portfolio = $db->prepare("SELECT * FROM `portfolio` WHERE `s_id` = 1");
+                        $portfolio->execute();
 
-                        <li class="element-item cat-1 cat-2">
-                            <a href="" class="portfolio__item">
-                                <img class="portfolio__img" src="./assets/image/portfolio/port2.webp" alt="">
-                                <div class="portfolio__content">giveaway.az</div>
-                            </a>
-                        </li>
+                        while ($port = $portfolio->fetch(PDO::FETCH_ASSOC)) {
+                            ?>
+                            <li class="element-item <?php echo catPort($port['cat']) ?>" data-aos="zoom-in">
+                                <a href="<?php echo $port['url'] ?>" target="_blank" class="portfolio__item">
+                                    <img class="portfolio__img"
+                                         src="<?php echo $site_url . '/admin/image/portfolio/' . $port['img'] ?>"
+                                         alt="">
+                                    <div class="portfolio__content"><?php echo $port['title'] ?></div>
+                                </a>
+                            </li>
+
+                            <?php
+                        }
+                        ?>
+
 
                     </ul>
                 </div>
@@ -160,49 +94,32 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 blog__item">
+                    <?php
+                    $blogs = $db->prepare("SELECT * FROM `blog` WHERE `s_id` = 1  ORDER by `id` DESC LIMIT 3");
+                    $blogs->execute();
 
-                        <a href="" class="blog__img">
-                            <img src="./assets/image/blog/24.png" alt="">
 
-                            <div class="blog__content">
-                                <div class="blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                    dignissimos dolorem ipsum nisi non praesentium quam quas soluta ut, veniam.
+                    while ($blog = $blogs->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                        <div class="col-xl-4 blog__item" data-aos="flip-up">
+
+                            <a href="<?php echo $site_url . '/blog-inner.php?id=' . $blog['id']; ?>" class="blog__img">
+                                <img src="<?php echo $site_url . '/admin/image/blog/' . $blog['img'] ?>" alt="">
+
+                                <div class="blog__content">
+                                    <div class="blog__title"><?php echo $blog['title'] ?></div>
                                 </div>
-                            </div>
 
-                        </a>
-
-
-                    </div>
-
-                    <div class="col-xl-4 blog__item">
-
-                        <a href="" class="blog__img">
-                            <img src="./assets/image/blog/24.png" alt="">
-
-                            <div class="blog__content">
-                                <div class="blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-                            </div>
-
-                        </a>
+                            </a>
 
 
-                    </div>
-
-                    <div class="col-xl-4 blog__item">
-
-                        <a href="" class="blog__img">
-                            <img src="./assets/image/blog/24.png" alt="">
-
-                            <div class="blog__content">
-                                <div class="blog__title">Lorem ipsum dolor sit.</div>
-                            </div>
-
-                        </a>
+                        </div>
 
 
-                    </div>
+                        <?php
+                    }
+                    ?>
+
 
                 </div>
             </div>
@@ -219,36 +136,30 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 ">
-                        <a href="" class="book-wrap__item">
-                            <img src="./assets/image/book/Kompüter_texnikası_və_proqramlaşdırma.jpg" alt="">
-                        </a>
-                    </div>
+                    <?php
+                    $books = $db->prepare("SELECT * FROM `book` WHERE `s_id` = 1 ORDER by `id` DESC LIMIT 4 ");
+                    $books->execute();
 
-                    <div class="col-xl-3 ">
-                        <a href="" class="book-wrap__item">
-                            <img src="./assets/image/book/Kompüter_və_İnformasiya-kommunikasiya_Texnologiyaları.png"
-                                 alt="">
-                        </a>
-                    </div>
+                    while ($book = $books->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                        <div class="col-xl-3 " data-aos="fade-up">
+                            <a href="<?php echo $site_url . '/book-inner.php?id=' . $book['id']; ?>"
+                               class="book-wrap__item">
+                                <img src="<?php echo $site_url . '/admin/image/book/' . $book['image'] ?>" alt="">
+                            </a>
+                        </div>
 
-                    <div class="col-xl-3 ">
-                        <a href="" class="book-wrap__item">
-                            <img src="./assets/image/book/Scratch_2.0_Proqramlaşdırma_Dili_1-ci_Hissə.jpg" alt="">
-                        </a>
-                    </div>
+                        <?php
+                    }
 
-                    <div class="col-xl-3 ">
-                        <a href="" class="book-wrap__item">
-                            <img src="./assets/image/book/Kompüter_texnikası_və_proqramlaşdırma.jpg" alt="">
-                        </a>
-                    </div>
+                    ?>
+
 
                 </div>
             </div>
         </div>
 
-        <div class="page contact">
+        <div class="page contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -310,4 +221,4 @@
     </div>
 
 
-<?php require_once __DIR__ . './include/footer.php' ?>
+<?php require_once __DIR__ . '/include/footer.php' ?>

@@ -16,17 +16,17 @@
 
   &__item {
     margin-bottom: 16px;
+    color: #378C3F;
 
     & h4 {
-      font-size: 14px;
+      font-size: 16px;
       margin-right: 4px;
       text-align: right;
       font-weight: normal;
-      color: #777;
       margin-bottom: 8px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: space-between;
 
     }
   }

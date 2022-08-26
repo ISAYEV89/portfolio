@@ -1,19 +1,15 @@
 @import 'bootstrap.scss';
 @import "variable.scss";
+@import "aos.scss";
 @import "common.scss";
 @import "footer.scss";
 //@import 'bootstrap.clear.scss';
 @import 'header.scss';
 @import "home";
-@import "skill";
+//@import "skill";
+@import "progress";
 @import "portfolio";
 @import "blog";
 @import "book";
 @import "input-container.scss";
 @import "sidebar.scss";
-
-
-
-
-//@import 'slick-slider/slider-slick';
-

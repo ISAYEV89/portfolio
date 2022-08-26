@@ -17,7 +17,39 @@ require_once __DIR__ .  '/../inc/ip.php';
 <body>
 
 
-<header>
+<header class="header">
+    <div class="container">
+        <section class="wrapper">
+            <a href="<?php echo $site_url ?>" class="header-logo">
+                <img src="./assets/image/icon/code.png" alt="">
+            </a>
+            <button type="button" class="opened-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="overlay"></div>
+            <nav class="navbar">
+                <button type="button" class="closed-menu">
+                    <div class="closed-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
 
+                </button>
+                <ul class="menu">
+                    <li class="menu-item"><a class="active" href="<?php echo $site_url ?>">Ana Səhifə </a></li>
+                    <li class="menu-item"><a href="<?php echo $site_url . '/blog.php' ?>">Bloq</a></li>
+                    <li class="menu-item"><a href="<?php echo $site_url . '/book.php' ?>">Kitablar</a></li>
+                </ul>
+
+
+
+            </nav>
+        </section>
+
+
+
+    </div>
 </header>
 

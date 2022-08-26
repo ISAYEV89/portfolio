@@ -4,6 +4,16 @@ function filter_form($post){
     return is_array($post) ? array_map('filter_form', $post) :  htmlspecialchars(trim($post));
 }
 
+function catPort($cat) {
+
+    $cat = explode(",", $cat);
+    $cat =  array_filter($cat);
+    $cat2 = '';
+    foreach ($cat as $key => $val) {
+        $cat2 .= $val . ' ';
+    }
+    return $cat2;
+}
 
 //// Tarix ve vaxt Azerbaycan
 $date_az = new \DateTime();

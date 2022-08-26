@@ -1,19 +1,21 @@
 .home {
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 40px;
   background: url('/assets/image/icon/bg1.jpg') no-repeat scroll center center;
   background-size: cover;
   //height: 500px;
 
 
   &__img {
-
+    text-align: center;
+    margin-top: 40px;
 
     & img {
       transform: rotateY(180deg);
-      width: 500px;
+      width: 240px;
       max-width: 100%;
-      height: auto;
+      height: 240px;
+      //border-radius: 50%;
     }
 
   }
@@ -23,22 +25,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: -30px;
   }
 
   &__info {
-
-
-    & h3 {
-      font-size: 40px;
-    }
+    text-align: center;
+    margin-bottom: 20px;
 
     & h1 {
-      font-size: 70px;
+      font-size: 34px;
     }
+
+    & h2 {
+      font-size: 14px;
+    }
+
 
     & h5 {
       font-weight: 500;
-      font-size: 24px;
+      font-size: 14px;
     }
   }
+}
+
+.link-contact {
+  background-color: #378c3f;
+  color: #fff;
+
+  font-weight: 400;
+  font-size: .8571em;
+  line-height: 1.35em;
+  margin: 5px 1px;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.lc-wrap {
+  margin-bottom: 20px;
+  text-align: center;
 }
