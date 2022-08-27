@@ -3,22 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/book.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/book.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/assets/scss/input-container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/input-container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/assets/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/inc/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/inc/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +47,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets/js" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -67,11 +55,11 @@
       <recent name="C:\xampp\htdocs\portfolio\front\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\root\assets\js" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\css" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\image\icon" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\static" />
       <recent name="C:\xampp\htdocs\portfolio\front\src\assets\static\favicon" />
-      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\image\icon" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -122,7 +110,7 @@
       <workItem from="1661450623327" duration="3647000" />
       <workItem from="1661462427565" duration="20791000" />
       <workItem from="1661530368098" duration="4170000" />
-      <workItem from="1661604835348" duration="8287000" />
+      <workItem from="1661604835348" duration="11860000" />
     </task>
     <servers />
   </component>

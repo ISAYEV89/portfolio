@@ -169,10 +169,10 @@
                         </div>
                     </div>
 
-                    <form  class="contact-form">
+                    <form  class="contact-form" id="contact-form">
 
                         <div class="group group--mb-xs group--w-100 ">
-                            <input class="group__input contact-email" name="name" type="email">
+                            <input class="group__input contact-name" name="name" type="text">
                             <label class="group__label">Ad və Soyad *</label>
                         </div>
 
@@ -182,18 +182,20 @@
                         </div>
 
                         <div class="group group--mb-xs group--w-100 ">
-                            <input class="group__input contact-email" name="email" type="email">
+                            <input class="group__input contact-phone" name="phone" type="text">
                             <label class="group__label">Telefon </label>
                         </div>
 
 
                         <div class="group group--mb-xs group--w-100 ">
 
-                            <textarea class="group__input height-xs contact-text" name="email" type="email"></textarea>
-                            <label class="group__label">Qeyd </label>
+                            <textarea class="group__input height-xs contact-text" name="text" type="text"></textarea>
+                            <label class="group__label">Qeyd *</label>
                         </div>
 
-                        <input type="submit" class="group__submit show-popup" data-showpopup="1"  id="contact-send" value="Göndər">
+                        <input type="submit" class="group__submit "  id="contact-send" value="Göndər">
+
+                        <a class="show-popup d-none" id="show-popup" href="#" data-showpopup="1">aaa</a>
 
                     </form>
 

@@ -193,21 +193,15 @@ $('.goContact').click(function () {
     localStorage.setItem('contact', 'true');
 });
 
-
 let aValue = localStorage.getItem('contact');
-console.log(aValue);
-
-
-
-
-
 if(aValue) {
     setTimeout(function () {
         $('.link-contact').click();
-    },500)
+    },100);
 
     setTimeout(function () {
         localStorage.removeItem("contact");
     }, 1000)
 }
 
+//// contact ajax
