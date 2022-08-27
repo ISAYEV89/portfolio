@@ -135,9 +135,79 @@ $(window).on("scroll", function() {
     }
 });
 
+if($(window).scrollTop() > 50) {
+    $(".header").addClass("active");
+} else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $(".header").removeClass("active");
+}
 
 ////
 AOS.init({
     duration: 1000,
     once: true,
 });
+
+
+
+/// popup
+
+function showPopup(whichpopup) {
+    var docHeight = $(document).height();
+    var scrollTop = $(window).scrollTop();
+    $('.overlay-bg').show().css({'height': docHeight});
+    $('.overlay-bg').removeClass('d-none');
+    $('.popup' + whichpopup).show().css({'top': scrollTop + 40 + 'px'});
+}
+
+// function to close our popups
+function closePopup() {
+    $('.overlay-bg').addClass('d-none');
+
+    $('.overlay-content').hide();
+}
+
+$('.show-popup').click(function (event) {
+    event.preventDefault();
+    var selectedPopup = $(this).data('showpopup');
+    showPopup(selectedPopup);
+});
+
+$('.close-btn, .overlay-bg').click(function () {
+    closePopup();
+    $('.overlay-bg').addClass('d-none');
+});
+
+$(document).keyup(function (e) {
+    if (e.keyCode == 27) {
+        closePopup();
+    }
+});
+
+
+
+//// contact from other page
+
+
+$('.goContact').click(function () {
+    localStorage.setItem('contact', 'true');
+});
+
+
+let aValue = localStorage.getItem('contact');
+console.log(aValue);
+
+
+
+
+
+if(aValue) {
+    setTimeout(function () {
+        $('.link-contact').click();
+    },500)
+
+    setTimeout(function () {
+        localStorage.removeItem("contact");
+    }, 1000)
+}
+

@@ -49,9 +49,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
     //// menu navbar
 
 
@@ -95,28 +92,66 @@ $(document).ready(function () {
     });
 
 
-
-
-
     // anchor same page slowly
 
-    $('.js-anchor-link').click(function(e){
+    $('.js-anchor-link').click(function (e) {
         e.preventDefault();
         var target = $($(this).attr('href'));
-        if(target.length){
+        if (target.length) {
             var scrollTo = target.offset().top;
-            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+            $('body, html').animate({scrollTop: scrollTo + 'px'}, 800);
         }
     });
 
 
     // header scroll background color
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 50) {
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
             $(".header").addClass("active");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
             $(".header").removeClass("active");
+        }
+    });
+
+    if ($(window).scrollTop() > 50) {
+        $(".header").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $(".header").removeClass("active");
+    }
+
+/// popup
+
+    function showPopup(whichpopup) {
+        var docHeight = $(document).height();
+        var scrollTop = $(window).scrollTop();
+        $('.overlay-bg').show().css({'height': docHeight});
+        $('.overlay-bg').removeClass('d-none');
+        $('.popup' + whichpopup).show().css({'top': scrollTop + 40 + 'px'});
+    }
+
+    // function to close our popups
+    function closePopup() {
+        $('.overlay-bg').addClass('d-none');
+
+        $('.overlay-content').hide();
+    }
+
+    $('.show-popup').click(function (event) {
+        event.preventDefault();
+        var selectedPopup = $(this).data('showpopup');
+        showPopup(selectedPopup);
+    });
+
+    $('.close-btn, .overlay-bg').click(function () {
+        closePopup();
+        $('.overlay-bg').addClass('d-none');
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) {
+            closePopup();
         }
     });
 

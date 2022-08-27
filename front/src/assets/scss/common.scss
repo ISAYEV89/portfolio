@@ -5,8 +5,8 @@ body {
 
 
 .page {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .page-wrap {
@@ -30,7 +30,7 @@ body {
 
 
 .main-title {
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 }
 
 .main__title {
@@ -42,4 +42,11 @@ body {
 .main-bg {
   //background-color: #F3F2EF;
   background-color: #F6F6F6;
+}
+
+
+.col-xs-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }

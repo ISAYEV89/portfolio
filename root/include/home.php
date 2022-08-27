@@ -18,7 +18,9 @@
             </div>
 
             <div class="col-lg-12 lc-wrap">
-                <a href="#contact" class="js-anchor-link link-contact">ƏLAQƏ</a>
+
+                <a href="<?php echo (($components_pages == 'index.php' || $components_pages == '')) ? '#contact' : $site_url; ?>"
+                   class="<?php echo (($components_pages == 'index.php' || $components_pages == '')) ? 'js-anchor-link' : 'goContact'; ?> link-contact">ƏLAQƏ</a>
             </div>
 
         </div>

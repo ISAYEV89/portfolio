@@ -2,7 +2,6 @@
 <?php require_once __DIR__ . '/include/home.php'; ?>
 <?php
 
-
 $blogs = $db->prepare("SELECT * FROM `blog` WHERE `s_id` = 1");
 $blogs->execute();
 
@@ -76,11 +75,6 @@ $blogs->execute();
         </div>
     </div>
 </main>
-<footer>
-
-</footer>
 
 
-<script type="text/javascript" src="./assets/js/app.js"></script></body>
-
-</html>
+<?php require_once __DIR__ . '/include/footer.php' ?>

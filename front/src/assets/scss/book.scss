@@ -7,6 +7,20 @@
       width: 100%;
       height: 350px;
       object-fit: cover;
+
+      @media only screen and (max-width: 767px) {
+        height: 350px;
+        margin-bottom: 12px;
+      }
+
+      /*@media only screen and (max-width: 991px) {
+        height: 200px;
+      }*/
+
+      /*@media only screen and (max-width: 1200px) {
+        height: 300px;
+      }*/
+
     }
   }
 }

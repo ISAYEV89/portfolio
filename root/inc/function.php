@@ -20,8 +20,14 @@ $date_az = new \DateTime();
 $date_az->setTimezone(new \DateTimeZone('+0400')); //GMT
 //$date = $date_az->format('Y-m-d H:i:s');
 
-function test($tt) {
-    echo $tt;
-}
+
+
+/// get url
+$directoryURIPages = $_SERVER['REQUEST_URI'];
+$path = parse_url($directoryURIPages, PHP_URL_PATH);
+$components_pages = explode('/', $path);
+$components_pages = $components_pages[1];
+
+
 
 ?>

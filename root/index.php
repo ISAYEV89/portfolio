@@ -159,8 +159,8 @@
             </div>
         </div>
 
-        <div class="page contact" id="contact">
-            <div class="container">
+        <div class="page contact position-relative" id="contact">
+            <div class="container" >
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="main-title">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact-form">
+                    <form  class="contact-form">
 
                         <div class="group group--mb-xs group--w-100 ">
                             <input class="group__input contact-email" name="name" type="email">
@@ -186,32 +186,19 @@
                             <label class="group__label">Telefon </label>
                         </div>
 
-                        <div class="group group--mb-xs group--w-100 ">
-                            <select class="group__select active" name="" id="">
-                                <option value="">Bilinmir</option>
-                                <option value="Vizitka tipli sayt">Vizitka tipli sayt</option>
-                                <option value="Landing page">Landing page</option>
-                                <option value="Bloq">Bloq</option>
-                                <option value="Fərdi sayt">Fərdi sayt</option>
-                                <option value="Korporativ sayt">Korporativ sayt</option>
-                                <option value="Kataloq tipli sayt">Kataloq tipli sayt</option>
-                                <option value="E-commerce">E-commerce</option>
 
-                            </select>
-                            <label class="group__label active">Saytın funksionalı seçin</label>
-                        </div>
-
-                        <p class="group__text">Sifarish vermek istediyiniz saytlar haqqinda etrafli meluman ve <strong>numune</strong>
-                            saytlari qeyd ederdiniz</p>
                         <div class="group group--mb-xs group--w-100 ">
 
-                            <textarea class="group__input height-100 contact-text" name="email" type="email"></textarea>
+                            <textarea class="group__input height-xs contact-text" name="email" type="email"></textarea>
                             <label class="group__label">Qeyd </label>
                         </div>
 
-                        <input type="submit" class="group__submit" id="contact-send" value="Göndər">
+                        <input type="submit" class="group__submit show-popup" data-showpopup="1"  id="contact-send" value="Göndər">
 
                     </form>
+
+
+
 
                 </div>
             </div>
@@ -220,5 +207,23 @@
 
     </div>
 
+
+    <div class="overlay-bg">
+        <div class="overlay-content popup1 show-popup f-modal-alert">
+            <div class="popup-flex">
+                <h2 class="user-header__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae inventore iure labore nisi quis rem ullam. Iure pariatur placeat voluptatem!</h2>
+                <div class="f-modal-icon f-modal-success animate">
+                    <span class="f-modal-line f-modal-tip animateSuccessTip"></span>
+                    <span class="f-modal-line f-modal-long animateSuccessLong"></span>
+                    <div class="f-modal-placeholder"></div>
+                    <div class="f-modal-fix"></div>
+                </div>
+                <div>
+                    <input type="submit" class="group__submit close-btn " value="BAĞLA">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 <?php require_once __DIR__ . '/include/footer.php' ?>

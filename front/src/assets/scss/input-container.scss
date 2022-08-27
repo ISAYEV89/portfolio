@@ -312,5 +312,17 @@ label.error {
 
 .contact-form {
   width: 60%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @media only screen and (max-width: 991px) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
