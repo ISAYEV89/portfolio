@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/input-container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/input-container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/root/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/include/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/home.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +44,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/portfolio/prozone" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -110,7 +107,9 @@
       <workItem from="1661450623327" duration="3647000" />
       <workItem from="1661462427565" duration="20791000" />
       <workItem from="1661530368098" duration="4170000" />
-      <workItem from="1661604835348" duration="11860000" />
+      <workItem from="1661604835348" duration="12857000" />
+      <workItem from="1661703773848" duration="435000" />
+      <workItem from="1661787165986" duration="953000" />
     </task>
     <servers />
   </component>

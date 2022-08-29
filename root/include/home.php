@@ -12,7 +12,7 @@
             <div class="col-lg-12 home__info-wrap">
                 <div class="home__info">
                     <h1>ELÇİN İSAYEV</h1>
-                    <h2>FULL-STACK DEVELOPER, FREELANCE</h2>
+                    <h2>FULL-STACK DEVELOPER, FREELANCER</h2>
 
                 </div>
             </div>
