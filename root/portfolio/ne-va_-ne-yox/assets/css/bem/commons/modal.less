@@ -1,0 +1,101 @@
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  overflow-y:auto;
+  display:none;
+  color: #fff;
+  &__contacts{
+    background-image: url("../images/home.png");
+    filter: blur(15px);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__order{
+    &--done{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 145;
+      color: #FFFFFF;
+      font-family: Montserrat;
+      font-size: 32.7px;
+      font-weight: 500;
+   }
+  }
+  &--open{
+    //overflow:hidden;
+	  display:block;
+  }
+  &__contact{
+    &-w{
+      margin: 0 auto;
+    }
+  }
+  &__content{
+    width: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: scale(1.1) translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    &--full{
+      width: 950px;
+      flex-direction: row;
+      transform: scale(1) translate(-50%,-50%);
+
+    }
+    @media(max-width:@screen-xs-max) {
+      text-align: left;
+      width: 100%;
+      padding: 0 22px;
+      align-items: flex-start;
+    }
+    }
+  &__title{
+    .fonts-native(79px,900,@sfont);
+    margin-bottom: 15px;
+    @media(max-width:@screen-xs-max){
+      font-size: 25px;
+      text-align: left;
+      margin-bottom: -5px;
+    }
+  }
+  &__txt{
+    .fonts-native(16px,bold,@pfont);
+    font-style: italic;
+    line-height: 18px;
+    max-width: 445px;
+    @media(max-width:@screen-xs-max){
+      font-size: 10px;
+      line-height: 13px;
+      padding-right: 22px;
+    }
+  }
+}
+.modal__zoom--out {
+    transform: scale(1) translate(-50%,-50%);
+}

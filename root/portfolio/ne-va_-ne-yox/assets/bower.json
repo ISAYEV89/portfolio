@@ -1,0 +1,21 @@
+{
+  "name": "wetravel-2.0",
+  "version": "0.0.0",
+  "authors": [
+    "Javidan Guliyev <q.cavidan@gmail.com>"
+  ],
+  "description": "Wertavel frontend",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor/assets/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.maskedinput": "~1.4.1",
+    "raty": "~2.7.0",
+    "jquery.floatLabel": "floatlabel#~1.0.0"
+  }
+}

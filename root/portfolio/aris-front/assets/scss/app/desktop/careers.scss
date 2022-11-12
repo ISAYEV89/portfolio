@@ -1,0 +1,71 @@
+.careers {
+  padding-top: 140px;
+  padding-bottom: 280px;
+  background-color: $color-black;
+
+  border: 1px solid rgba(0, 92, 219, 0);
+  border-radius: 5px;
+  //transition: all 5s ease;
+
+  @media (max-width: 767px) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  &__item {
+    padding: 32px;
+    background-color: $color-gray;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 24px;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 24px;
+    font-family: $regular;
+    margin-bottom: 4px;
+  }
+
+  &__span {
+    color: #939393;
+    font-size: 14px;
+    font-family: $light;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-family: $medium;
+    color: $color-white;
+  }
+
+  &__content {
+    margin-top: 40px;
+    display: none;
+  }
+
+  &__lead {
+    color: $color-white;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+
+  & .active {
+    border: 1px solid rgba(0, 92, 219, 1);
+    background-color: $color-black;
+    transition: all .5s ease;
+  }
+}
+
+

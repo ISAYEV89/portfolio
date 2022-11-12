@@ -1,0 +1,97 @@
+.subscribe {
+  width: 55%;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-family: @semibold;
+    color: @light-grey;
+    margin-bottom: 56px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__email {
+    width: 320px;
+    height: 58px;
+    border: none;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
+    padding-left: 30px;
+    border-radius: 100px 0 0 100px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 13px;
+      font-family: @regular;
+      color: #BABABA;
+    }
+  }
+
+  &__submit {
+    width: 156px;
+    height: 58px;
+    font-size: 13px;
+    border: none;
+    padding: 0;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, .16);
+    border-radius: 0 100px 100px 0;
+    font-family: @bold;
+    color: @white;
+    background-color: #F4A627; // change to #F4A627 ... #F5D13E
+    outline: none;
+
+  }
+}
+
+
+.quote {
+  position: relative;
+  background-image: url("https://picsum.photos/id/26/1200/1200");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 363px;
+
+  background-attachment: fixed;
+
+
+  @media (max-width: 768px) {
+    background-size: 100% 100%;
+  }
+
+  &:before {
+    .before();
+    background-color: rgba(0, 0, 0, .67);
+  }
+
+  &__content {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    z-index: 1;
+    position: relative;
+    padding: 56px 0;
+  }
+
+  &__lead {
+    margin: 56px 0;
+    font-size: 18px;
+    color: @white;
+    font-family: @lightitalic;
+  }
+
+  &__author {
+    font-size: 14px;
+    font-family: @lightitalic;
+    color: #AEAEAE;
+  }
+}

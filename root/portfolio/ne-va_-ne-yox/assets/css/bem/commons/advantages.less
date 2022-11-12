@@ -1,0 +1,46 @@
+.advantages{
+    margin-bottom: 74px;
+    margin-top:667px;
+    &__wrapper{
+
+    }
+    &__heading{
+        margin-top:50px;
+    }
+    &__item{
+        .make-md-column(4);
+        position: relative;
+        text-align: center;
+        //border-right: 1px solid #bbcee2;
+        &:after{
+            content:' ';
+            display: block;
+            height: 167px;
+            background:#bbcee2;
+            width: 1px;
+            position: absolute;
+            right: 0;
+            top:~"calc(50% - 77px)";
+            @media(max-width:@screen-xs-max) {
+                content:none;
+            }
+        }
+        &--last:after{
+            border:none;
+            content: none;
+            display: none;
+        }
+    }
+    &__icon{
+
+    }
+    &__topic{
+        .fonts-native(22px,500);
+        color:#fedd00;
+    }
+    &__desc{
+        .fonts-native(14px,100);
+        color:black;
+        margin-top:20px;
+    }
+}

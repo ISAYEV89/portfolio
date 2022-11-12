@@ -1,0 +1,75 @@
+.banner{
+    background: #1a8fc1;
+}
+.fotorama{
+	.banner{
+        background: #1a8fc1;
+		&__container{
+			height: 100%;
+            position: relative;
+		}
+		&__slide{
+			height: 100%;
+            padding-top:120px;
+			background-size:cover;
+		}
+		&__call{
+			background:#1a8fc1;
+			color:white;
+			.fonts-native(20px,bold);
+			padding:6px 20px;
+			border-radius:10px;
+			margin-top:20px;
+            text-decoration: underline;
+			display: inline-block;
+		}
+		&__text{
+			position: absolute;
+			height: 100%;
+			display: table;
+			.make-lg-column(3);
+			.make-md-column(5);
+            padding:0;
+			@media(max-width:@screen-xs-max){
+				width:80%;
+			}
+		}
+		&__caption-w{
+			.fonts-native(45px,100);
+			color: white;
+			display: table-cell;
+			vertical-align: middle;
+			@media(max-width:@screen-xs-max){
+				font-size: 30px;
+				line-height: 35px;
+			}
+		}
+		&__more{
+			display: inline-block;
+			border-radius:10px;
+			border:1px solid white;
+			color:white;
+            text-decoration: underline;
+			.fonts-native(20px,300);
+			padding:6px 20px;
+			margin-top:20px;
+		}
+	}
+    .fotorama__nav-wrap{
+        position: absolute;
+        bottom:60px;
+    }
+    .fotorama__nav__frame{
+        background:transparent;
+        width:16px;
+        height: 16px;
+        border-radius: 16px;
+        border:2px solid white;
+        &.fotorama__active{
+            background:white;
+        }
+        .fotorama__dot{
+            display: none;
+        }
+    }
+}

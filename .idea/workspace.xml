@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="54bb7082-de9d-43cc-af26-0a81892485ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/include/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/root/include/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/assets/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/assets/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/portfolio/prozone/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/root/portfolio/prozone/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/portfolio/prozone/blog-inner.html" beforeDir="false" afterPath="$PROJECT_DIR$/root/portfolio/prozone/blog-inner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/portfolio/prozone/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/root/portfolio/prozone/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/portfolio/prozone/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/root/portfolio/prozone/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/root/portfolio/prozone/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/root/portfolio/prozone/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +50,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/portfolio/prozone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/root/portfolio" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -52,11 +58,11 @@
       <recent name="C:\xampp\htdocs\portfolio\front\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\portfolio\root\portfolio" />
+      <recent name="C:\xampp\htdocs\portfolio\root\portfolio\prozone" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\js" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\css" />
       <recent name="C:\xampp\htdocs\portfolio\root\assets\image\icon" />
-      <recent name="C:\xampp\htdocs\portfolio\root\assets\static" />
-      <recent name="C:\xampp\htdocs\portfolio\front\src\assets\static\favicon" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +115,11 @@
       <workItem from="1661530368098" duration="4170000" />
       <workItem from="1661604835348" duration="12857000" />
       <workItem from="1661703773848" duration="435000" />
-      <workItem from="1661787165986" duration="953000" />
+      <workItem from="1661787165986" duration="1707000" />
+      <workItem from="1662300573554" duration="5392000" />
+      <workItem from="1664005381615" duration="9000" />
+      <workItem from="1664005400660" duration="1678000" />
+      <workItem from="1665844189807" duration="596000" />
     </task>
     <servers />
   </component>

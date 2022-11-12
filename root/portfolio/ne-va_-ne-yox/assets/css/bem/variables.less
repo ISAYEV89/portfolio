@@ -1,0 +1,63 @@
+@red: #ff0000;
+@light-red: #FF00A1;
+@grey: #b4b4b4;
+@dark-grey: #888888;
+@light-grey: #484848;
+@green: #319db5;
+@purple : #a327f4;
+@blue: #2764F4;
+@green: #00970A;
+@white: #ffffff;
+@light-black: #141414;
+@black: #000000;
+@yellow: #F4A627;
+@orange: #F25300;
+
+/*
+@color-green: #74b929  ;
+@color-gray:#959595;
+@color-gray-dark:#343434;
+@color-yellow:#f7d448;
+*/
+
+@bold: 'Poppins-Bold';
+@light: 'Poppins-Light';
+@lightitalic: 'Poppins-LightItalic';
+@medium: 'Poppins-Medium';
+@regular: 'Poppins-Regular';
+@semibold: 'Poppins-SemiBold';
+@core :'Core Sans G';
+
+
+/*@pfont:'Lato';
+.fonts-native(@size: 14px, @weight: normal,@font:@pfont){
+	line-height: @size;
+	font-family: @font, 'Arial';
+	font-weight: @weight;
+	font-size: @size;
+}*/
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+.clearfix{
+	clear:both;
+	float:none;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

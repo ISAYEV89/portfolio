@@ -1,0 +1,46 @@
+.fieldgroup{
+	position: relative;
+	&--select{
+		&:before{
+			content:' ';
+			.pico();
+			//.sprite(@icon-caret);
+			float:right;
+			position: absolute;
+			top:14px;
+			left: 10px;
+			z-index: 2;
+			pointer-events: none;
+
+		}
+		
+	}
+	&__inp{
+		width:100%;
+		border-radius: 10px;
+		height: 34px;
+		background: white;
+		border:1px solid #cdcdcd;
+		padding-left: 30px;
+		.fonts-native(14px,100);
+		&--select{
+			-webkit-appearance: none;
+			-moz-appearance: none;		
+			&::-ms-expand {
+			  display: none;
+			}
+
+		}
+	}
+	&__btn{
+		position: absolute;
+		top:10px;
+		left:10px;
+		border:none;
+		background:transparent;
+		padding:0;
+	}
+	&__sprite{
+		vertical-align: top;
+	}
+}

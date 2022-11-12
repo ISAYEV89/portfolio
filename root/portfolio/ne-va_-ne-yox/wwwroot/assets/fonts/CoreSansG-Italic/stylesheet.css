@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Core Sans G';
+    src: url('CoreSansG-Italic.eot');
+    src: url('CoreSansG-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CoreSansG-Italic.woff2') format('woff2'),
+        url('CoreSansG-Italic.woff') format('woff'),
+        url('CoreSansG-Italic.ttf') format('truetype'),
+        url('CoreSansG-Italic.svg#CoreSansG-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+

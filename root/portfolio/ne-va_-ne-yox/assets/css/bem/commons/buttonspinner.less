@@ -1,0 +1,89 @@
+/*
+Buttonspinner 
+
+Markup:
+<p><a class="button button--primary button--md buttonspinner"> Primary Button </a></p>
+<p><a class="button button--cancel button--md buttonspinner"> Cancel Button </a></p>
+<p><a class="button button--link button--md buttonspinner"> Link button </a></p>
+<p><a class="button button--link button--md buttonspinner button--text-left"> Link Text left button </a></p>
+<p><a class="button button--primary button--sm buttonspinner"> Small Primary Button </a></p>
+<p><a class="button button--primary button--md buttonspinner"> Middle Primary Button </a></p>
+<p><a class="button button--primary button--lg buttonspinner"> Large Primary Button </a></p>
+<p><a class="button button--primary button--md button--block buttonspinner"> Block Primary Button </a></p>
+<p><a href="#" class="button button--fill-white button--md button--blue buttonspinner">Button Fillwhite Blue</a></p>
+<p><a href="#" class="button button--fill-white button--md button--orange buttonspinner">Button Fillwhite Orange</a></p>
+
+Styleguide Components.ButtonSpinner
+*/
+
+// Button style
+//**********************//
+.buttonspinner{
+    position:relative;
+  &:before{
+    content:'';
+	  color:white;
+    position:absolute;
+    right:10px;
+    top:50%;
+    margin-top:-11px;
+    width:20px;
+    height:20px;
+    border: 4px solid;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition:opacity .5s linear;
+    opacity:0;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name:rotate;
+    animation-timing-function: linear;
+  }
+  &:after{
+    content:'';
+    display:inline-block;
+    height:100%;
+    width:0px;
+    transition-delay: 0.5s;
+    transition-duration: 0.75s;
+    transition-property: width;
+  }
+    pointer-events: none;
+    cursor: not-allowed;
+    &:not(.expand){
+     text-align: left;  
+    }
+    &:before{
+        transition-delay: 0s;
+        transition-duration: 1s;
+        opacity:1;
+    }
+    &:after{
+        transition-delay: 0s;
+        width:20px;
+    }
+  
+  &.sending{
+  }
+}
+
+// Animations
+//**********************//
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } 
+}
+  

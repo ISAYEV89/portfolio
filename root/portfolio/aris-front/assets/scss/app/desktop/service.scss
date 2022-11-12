@@ -1,0 +1,77 @@
+.service-wrap {
+  padding-top: 140px;
+  padding-bottom: 116px;
+  background-color: $color-black;
+
+  @media (max-width: 576px) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+}
+
+
+.service {
+  text-align: center;
+  display: block;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  transition: all .5s ease;
+
+
+
+
+  &--bg:hover {
+    background-color: #01020A;
+    border-radius: 5px;
+  }
+
+  &--item {
+    border: 1px solid rgba(0, 92, 219, 0);
+    border-radius: 5px;
+    margin-bottom: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--item:hover {
+    background-color: #01020A;
+    border: 1px solid rgba(0, 92, 219, 1);
+
+  }
+
+  &--index {
+
+    @media (max-width: 991px) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  //border: 1px solid red;
+
+  &__icon {
+    max-width: 68px;
+    max-height: 68px;
+    margin-bottom: 16px;
+
+    @media (max-width: 576px) {
+      max-width: 57px;
+      max-height: 57px;
+    }
+  }
+
+  &__lead {
+    font-size: 14px;
+    font-family: $light;
+    color: $color-water;
+    line-height: initial;
+    overflow: hidden;
+    height: 42px;
+  }
+
+}

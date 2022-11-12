@@ -1,0 +1,42 @@
+.city{
+  &__info{
+    width: 100%;
+    background: #fff;
+    padding: 55px 0;
+    &--w{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--bar{
+      width: calc(100%/3);
+      text-align: center;
+      padding: 40px 0;
+      &:not(:last-child){
+        border-right: 1px solid #bbcee2;
+      }
+    }
+    &--title{
+      color: #fedc02;
+      font-size: 62px;
+      font-family: Maxpro,Arial;
+      position: relative;
+      display: inline-block;
+      padding: 0 45px;
+      margin-bottom: 30px;
+      padding-left: 20px;
+    }
+    &--badge{
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+    }
+    &--square{
+      font-size: 22px;
+      position: absolute;
+      top: -5px;
+      right: -15px;
+    }
+  }
+}

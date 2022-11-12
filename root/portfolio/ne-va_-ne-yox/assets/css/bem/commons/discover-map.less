@@ -1,0 +1,47 @@
+.discover-map {
+  &__wrapper {
+    position: relative;
+    @media (max-width: @screen-xs-max) {
+      display: none;
+    }
+  }
+
+  &__items {
+  }
+
+  &__item {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    .fonts-native(14px, 200);
+    @media (max-width: @screen-xs-max) {
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sprite {
+      @media (max-width: @screen-xs-max) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &--mob {
+    display: none;
+    position: relative;
+    @media (max-width: @screen-xs-max) {
+      display: block !important;
+    }
+  }
+
+  &--list {
+    padding: 0;
+    list-style: none;
+    color: #000;
+    font-size: 20px;
+    font-family: Maxpro, Arial;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,22 @@
+.hidden{
+	&--xs{
+		@media(max-width:@screen-xs-max){
+			display:none!important;
+		}
+	}
+	&--sm{
+		@media(max-width:@screen-sm-max) and (min-width:@screen-sm-min){
+			display: none!important;
+		}
+	}
+	&--md{
+		@media(max-width:@screen-md-max) and (min-width:@screen-md-min){
+			display: none!important;
+		}
+	}
+	&--lg{
+		@media(min-width:@screen-lg-min){
+			display:none!important;
+		}
+	}
+}

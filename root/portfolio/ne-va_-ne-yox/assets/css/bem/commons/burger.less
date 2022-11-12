@@ -1,0 +1,15 @@
+.burger{
+	width:22px;
+	@media(min-width:@screen-md-min){
+		display: none;
+	}
+	span{
+		height: 2px;
+		background: white;
+		margin-bottom: 5px;
+		display: block;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

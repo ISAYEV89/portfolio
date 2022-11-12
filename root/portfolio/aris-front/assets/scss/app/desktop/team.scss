@@ -1,0 +1,162 @@
+.team-wrap {
+  background-color: $color-black;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  @media (max-width: 576px) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+
+  }
+}
+
+.team {
+  text-align: center;
+
+  &--mb {
+    margin-bottom: 150px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 58px;
+    }
+  }
+
+  &:hover .team__hover-top {
+    right: -44px;
+
+    @media (max-width: 576px) {
+      right: -34px;
+    }
+  }
+
+  &:hover .team__hover-bottom {
+    left: -44px;
+
+    @media (max-width: 576px) {
+      left: -34px;
+    }
+  }
+
+  &__img {
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 576px) {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 24px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__hover-top {
+    position: absolute;
+    background-color: #323232;
+    height: 17px;
+    width: 80px;
+    top: 20px;
+    right: 11px;
+    border-radius: 100px;
+    transition: right .5s ease;
+
+    @media (max-width: 576px) {
+      width: 50px;
+    }
+  }
+
+  &__hover-bottom {
+    position: absolute;
+    background-color: #005CDB;
+    height: 17px;
+    width: 80px;
+    bottom: 20px;
+    left: 15px;
+    border-radius: 100px;
+    transition: left .5s ease;
+
+    @media (max-width: 576px) {
+      width: 50px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    background-color: $color-gray-dark;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
+
+  &__lead {
+    font-size: 14px;
+    font-family: $extralight;
+    color: #979797;
+  }
+
+  &__soc {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: -50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 576px) {
+      bottom: -37%;
+    }
+
+    & > a:not(:last-child) {
+      margin-right: 24px;
+
+      @media (max-width: 576px) {
+        margin-right: 19px;
+      }
+    }
+
+    &-item {
+      width: 48px;
+      height: 48px;
+      background-color: $color-gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      @media (max-width: 576px) {
+        width: 37px;
+        height: 37px;
+      }
+
+      &:hover {
+        background-color: $color-blue;
+
+        & .icon-facebook, .icon-linkedin, .icon-at {
+          color: $color-white;
+        }
+      }
+
+      & img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}
+
+.icon-facebook, .icon-linkedin, .icon-at {
+  color: $color-blue;
+
+
+}

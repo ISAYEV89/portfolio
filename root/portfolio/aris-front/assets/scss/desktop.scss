@@ -1,0 +1,21 @@
+/* DOCUMENT INFORMATION
+- Document: Theme_Name
+- Version:  1.0.0
+- Client:   Client_Name
+- Author:   Emin Azeroglu
+*/
+
+/* Icon Import */
+@import "../icons/css/icon.css";
+
+/* Css Plugin Import */
+@import "../plugins/bootstrap/css/bootstrap.min.css";
+@import "../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css";
+@import "../plugins/inputmask/inputmask.css";
+@import "../plugins/scrollbar/scrollbar.css";
+@import "../plugins/select2/css/select2.min.css";
+
+/* Css App Import */
+@import "default/init";
+@import "app/desktop/default";
+@import "app/desktop/style";

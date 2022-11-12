@@ -1,0 +1,180 @@
+.contact {
+  background-color: $color-black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+
+  &__headline {
+    display: flex;
+
+    & input:first-child {
+      margin-right: 8px;
+    }
+
+    & input:last-child {
+      margin-left: 8px;
+    }
+
+  }
+
+  &__input, &__textarea {
+    background-color: transparent;
+    height: 48px;
+    padding-left: 24px;
+    border: 1px solid #787878;
+    color: $color-white;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 16px;
+    font-family: $extralight;
+
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+    &:focus {
+      outline: 2px solid $color-blue !important;
+      border-radius: 5px;
+    }
+  }
+
+  &__textarea {
+    height: 111px;
+    padding-top: 13px;
+    margin-bottom: 40px;
+  }
+
+  &__submit {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 48px;
+    width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    max-width: 48px;
+    background-color: #3B3B3B;
+    border-radius: 50%;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 48%);
+    padding: 12px;
+    margin-right: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: 14px;
+    font-family: $extralight;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__bg {
+    background-image: url(../img/contact-image.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100% + 100px);
+    width: 100%;
+  }
+
+}
+
+///////////////////
+
+.wrap-icon {
+
+  &>div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &>div:last-child {
+    margin-bottom: 56px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $color-white;
+    font-family: $extralight;
+
+    &-item {
+      color: $color-white;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__svg {
+      height: 48px;
+      width: 48px;
+      min-height: 48px;
+      max-height: 48px;
+      min-width: 48px;
+      max-width: 48px;
+      background-color: #3B3B3B;
+      border-radius: 50%;
+      box-shadow: 2px 3px 15px rgba(0, 0, 0, 48%);
+      padding: 12px;
+      margin-right: 24px;
+  }
+
+}
+
+.icon-round {
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $color-gray;
+
+  &--mr {
+    margin-right: 24px;
+  }
+}
+
+.icon-phone, .icon-mail, .icon-pin {
+  font-size: 30px;
+  color: $color-blue;
+
+  &:hover {
+    color: $color-blue;
+  }
+
+}
+
+
